@@ -1,0 +1,138 @@
+.reg-main {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* background-image: url(../../about/aboutImage/welcome-bg.png); */
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.6)),
+    url("../../about/aboutImage/insuranceReg.jpg") center fixed;
+  background-size: cover;
+}
+.reg-submain {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)),
+    url("../../about/aboutImage/welcome-bg.png");
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 18cm;
+  padding-top: 30px;
+  padding: 32px 32px 24px 32px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 14px rgb(0 0 0 / 4%);
+  border-radius: 16px;
+  color: #ced4da;
+}
+.reg-img {
+  object-fit: contain;
+  padding-bottom: 32px;
+}
+.reg-agent-client {
+  margin-bottom: 25px;
+}
+
+label.ant-radio-button-wrapper.client {
+  display: flex;
+  align-items: center;
+  padding: 9px 35px;
+  height: 45px;
+  background-color: #3d538c;
+  color: #fff !important;
+  font-size: 18px;
+  border: none;
+}
+
+.register {
+  margin-left: 38px;
+  padding-bottom: 25px;
+  margin-right: 35px;
+}
+.reg-title {
+  display: flex;
+  margin-bottom: 5px;
+  color: #ced4da;
+  font-size: 16px Inter, serif;
+  font-weight: 450;
+}
+.reg-input-password {
+  display: flex;
+  /* border: 1px solid lightgrey; */
+}
+.reg-placeholder {
+  height: 35px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 0.375rem 0.75rem;
+  box-shadow: none;
+  font-size: 1rem;
+  outline-color: rgb(93, 182, 255);
+  outline-width: thin;
+  width: 100%;
+}
+
+.input:focus {
+  outline: none !important;
+  border: 1px solid blue;
+}
+.reg-value {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 38px;
+}
+
+.reg-comp-select {
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  margin-left: 38px;
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
+  font-weight: 400;
+  padding: 0.6rem 0.4rem;
+  font-size: 1rem;
+  color: #212529;
+  border: 1px solid #ced4da;
+}
+select.reg-comp-select {
+  color: gray;
+}
+.reg-comp-liscno {
+  display: flex;
+  justify-content: space-between;
+}
+.company {
+  width: 100%;
+}
+.liscence {
+  width: 80%;
+}
+.liscence_box {
+  width: 80%;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #212529;
+  border: 1px solid #ced4da;
+  padding: 0.55rem 0.75rem;
+  outline-color: rgb(93, 182, 255);
+  outline-width: thin;
+}
+.reg-btn {
+  margin-top: 60px;
+  margin-left: 70%;
+}
+.reg-btn1 {
+  background-color: #268acc;
+  padding: 9px 30px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+.reg-msg {
+  align-items: center;
+  color: #ced4da;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px 0px 16px;
+  /* font-family: "Josefin Sans"; */
+}
