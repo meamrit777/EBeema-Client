@@ -1,6 +1,5 @@
-import React from "react";
 import "./Footer.css";
-import { FaAngleDoubleRight } from "react-icons/fa";
+// import { FaAngleDoubleRight } from "react-icons/fa";
 import { RiInstagramLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { GrFacebookOption, GrLinkedinOption } from "react-icons/gr";
@@ -111,7 +110,7 @@ function Footer() {
         <div className="copyright-div-infocom">
           <p>
             Copyright © 2022 , eBeema Pvt. Ltd. | Powered by{" "}
-            <a href="#" class="text-primary">
+            <a class="text-primary">
               Infocom Solutions Pvt. Ltd.
             </a>
           </p>

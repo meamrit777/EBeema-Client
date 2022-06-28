@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import { Context } from "../../../context/auth/Context";
+import DashNav from "./DashNav";
 
 const Container = styled.div`
   height: 200vh;
@@ -11,11 +13,12 @@ const Title = styled.h1`
   text-align: center;
 `;
 const Dashboard = () => {
+  const { user } = useContext(Context);
+  console.log("asff", user);
   return (
     <Container>
-      <Title>
-        This is DASHBOARD you can't assess this page until you login
-      </Title>
+      <DashNav />
+      <Title>Welcome to the Dashboard</Title>
     </Container>
   );
 };

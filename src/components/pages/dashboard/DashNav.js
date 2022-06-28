@@ -1,35 +1,17 @@
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
-import Dropdown from "./dropdown";
 import { IoIosArrowDown } from "react-icons/io";
-import { Context } from "../../context/auth/Context";
 import { FaSignOutAlt } from "react-icons/fa";
 import { Tooltip } from "antd";
-function Navbar() {
+import { Context } from "../../../context/auth/Context";
+
+const DashNav = () => {
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
   const { user, dispatch } = useContext(Context);
 
   const handelClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   const [show, setShow] = useState(false);
-
-  const onMouseEnter = () => {
-    if (window.innerWidth < 800) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
-
-  const onMouseLeave = () => {
-    if (window.innerWidth < 800) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -58,14 +40,11 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li
               className="nav-item"
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}
             >
               <Link to="#" className="nav-links" onClick={closeMobileMenu}>
-                Insurance Plans <IoIosArrowDown className="ioios" size="21px" />
+                Insurance Plans <IoIosArrowDown className="ioios" size="1rem" />
               </Link>
 
-              {dropdown && <Dropdown />}
             </li>
             <li className="nav-item">
               <Link
@@ -130,50 +109,11 @@ function Navbar() {
                   </Link>
                 </div>
               )}
-              <i className="topSearchIcon fas fa-search"></i>
-
-              {/* <Link
-                to="/login"
-                className="nav-links-mobile auth-log"
-                onClick={closeMobileMenu}
-              >
-                Login
-              </Link>
-              <Link
-                to="/register"
-                className="nav-links-mobile auth-reg"
-                onClick={closeMobileMenu}
-              >
-                Register
-              </Link> */}
             </li>
           </ul>
-
-          {/* <div className="app_header">
-        <ul className="navbar-menus">
-          <li className="normal-width list_float">
-            <a href="/contact" className="menu-icon">
-              Contact
-            </a>
-          </li>
-          <li className="normal-width list_float">
-            <a href="/blog" className="menu-icon">
-              Blog
-            </a>
-          </li>
-          <li className="auth-wrapper list_float">
-            <a className="nav-login" href="/login">
-              Login
-            </a>
-            <a className="nav-register" href="/register">
-              Register
-            </a>
-          </li>
-        </ul>
-      </div> */}
         </div>
       </div>
     </nav>
   );
-}
-export default Navbar;
+};
+export default DashNav;

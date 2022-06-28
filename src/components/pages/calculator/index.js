@@ -66,7 +66,7 @@ const Calculator = () => {
   // useEffect(() => {
   //   setInfo(localStorage.getItem("category"));
   // }, []);
-  console.log("dd", localStorage.getItem("category"));
+  // console.log("dd", localStorage.getItem("category"));
   useEffect(() => {
     if (products?.data) {
       setdropCategory(products?.data?.catagories);

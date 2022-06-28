@@ -63,13 +63,16 @@
 .log-placeholder {
   height: 35px;
   border: 1px solid lightgrey;
+  border: none;
   border-radius: 10px;
   padding: 0.375rem 0.75rem;
   box-shadow: none;
   font-size: 1rem;
   outline-color: rgb(93, 182, 255);
+  /* outline: none; */
   outline-width: thin;
   width: 100%;
+  color: #212529;
 }
 
 ::-webkit-input-placeholder {

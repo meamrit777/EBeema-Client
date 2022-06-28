@@ -20,7 +20,7 @@ export const fetchAllResult = () => async (dispatch) => {
   const q = queryString.stringify(data);
   const response = await axios({
     method: "post",
-    url: `http://ispl.ebeema.com/api/life/calculation`,
+    url: `https://ispl.ebeema.com/api/life/calculation`,
     data: q,
   });
   console.log("responsesssss", response);
@@ -31,7 +31,7 @@ export const fetchSelectedResult = (data) => async (dispatch) => {
   const q = queryString.stringify(data);
   const response = await axios({
     method: "post",
-    url: `http://ispl.ebeema.com/api/life/calculation`,
+    url: `https://ispl.ebeema.com/api/life/calculation`,
     data: q,
   });
   console.log("responsesssss", response);

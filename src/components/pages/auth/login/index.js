@@ -92,7 +92,7 @@ function Login() {
                   name="remember"
                   style={{ marginRight: "5px" }}
                 />
-                <label for="demo-form-checkbox" className="text-sm">
+                <label htmlFor="demo-form-checkbox" className="text-sm">
                   Remember Me
                 </label>
               </div>
