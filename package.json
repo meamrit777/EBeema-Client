@@ -39,8 +39,7 @@
     "sass": "^1.49.9",
     "styled-components": "^5.3.5",
     "sweetalert2": "^11.4.8",
-    "web-vitals": "^1.1.2",
-    "webpack-dev-server": "^4.9.2"
+    "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
